@@ -1,0 +1,143 @@
+@import url(./variables.css);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family-open-sans), sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #7c7c7c;
+}
+
+/* Common styles */
+.logo {
+  width: 8.5rem;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+header .nav-cont {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .nav-cont nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header .nav-cont nav a {
+  color: var(--color-neutral);
+  font-family: var(--font-family-gotham);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header .search {
+  position: relative;
+  width: 16rem;
+  z-index: 0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+header .search input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  z-index: 0;
+  font-weight: 500;
+}
+
+header .search input::placeholder {
+  color: var(--color-gray-600);
+  font-weight: 600;
+}
+
+header .search button {
+  position: absolute;
+  right: calc(0.75rem / 2);
+  top: calc(50% - (2rem / 2));
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: var(--color-gradient);
+  border-radius: 999px;
+  z-index: 1;
+}
+
+/* hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/images/346601\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.hero .overlay-up {
+  background: linear-gradient(
+    360deg,
+    rgba(28, 28, 40, 0.8) 0%,
+    rgba(28, 28, 40, 0) 77.78%
+  );
+  transform: rotate(180deg);
+}
+.hero .overlay-down {
+  background: linear-gradient(360deg, #1c1c28 0%, rgba(28, 28, 40, 0) 77.78%);
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+.hero .floating-scroll {
+  position: absolute;
+  z-index: 2;
+}

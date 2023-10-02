@@ -1,0 +1,20 @@
+:root {
+  --font-family-gotham: Gotham;
+  --font-family-open-sans: "Open Sans";
+  --color-neutral: #ffffff;
+  --color-black: #20202e;
+  --color-gray-dark: #57576a;
+  --color-gray-light: #57576a;
+  --color-secondary: #080357;
+  --color-accent: #f68e5f;
+  --color-base: #1c1c28;
+  --color-alt: #f5dd90;
+  --color-gradient: linear-gradient(#7b61ff 0%, #aa82ff 100%);
+  --color-gray-100: #e4e5ec;
+  --color-gray-200: #c9cad8;
+  --color-gray-600: #5f627e;
+  --color-gray-800: #30313f;
+  --color-primary-100: #dee1ff;
+  --color-primary-200: #bdc3ff;
+  --color-primary-300: #9ba5fe;
+}
